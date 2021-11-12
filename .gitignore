@@ -50,3 +50,8 @@ modules.order
 Module.symvers
 Mkfile.old
 dkms.conf
+/.vs/BookStore
+/Tests/bin/Debug/net6.0
+/Tests/obj
+/WebApi/bin/Debug/net6.0
+/WebApi/obj
