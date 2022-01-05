@@ -1,4 +1,4 @@
-namespace WebApi.Models
+namespace Models
 {
     public class Book
     {
@@ -15,5 +15,7 @@ namespace WebApi.Models
         //public int TemperatureF => 32 + (int)(TemperatureC / 0.5556);
 
         public string? Summary { get; set; }
+
+        public BookCategory BookCategory { get; set; }
     }
 }

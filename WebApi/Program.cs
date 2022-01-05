@@ -1,10 +1,10 @@
 using Microsoft.EntityFrameworkCore;
-using WebApi.Models;
+using Services;
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
-
+builder.Services.AddScoped<IBookService, BookService>();
 builder.Services.AddControllers();
 //builder.Services.AddDbContext<DataContext>(options => options.UseInMemoryDatabase("BookStore"));
 builder.Services.AddDbContext<DataContext>(option => option.UseSqlServer(builder.Configuration.GetConnectionString("DataContext")));
@@ -19,8 +19,8 @@ var app = builder.Build();
 if (app.Environment.IsDevelopment())
 {
     app.UseDeveloperExceptionPage();
-    //app.UseSwagger();
-    //app.UseSwaggerUI();
+    app.UseSwagger();
+    app.UseSwaggerUI();
 }
 
 app.UseAuthorization();

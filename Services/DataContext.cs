@@ -1,6 +1,7 @@
 ﻿using Microsoft.EntityFrameworkCore;
+using Models;
 
-namespace WebApi.Models
+namespace Services
 {
     public class DataContext : DbContext
     {
