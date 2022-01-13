@@ -3,9 +3,15 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.0.31903.59
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebApi", "WebApi\WebApi.csproj", "{45B10785-A39F-4DFC-8005-CD6AA2440E0B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebApi", "WebApi\WebApi.csproj", "{45B10785-A39F-4DFC-8005-CD6AA2440E0B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tests", "Tests\Tests.csproj", "{F335971C-90FD-4B6A-A7CA-A5F17912C923}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Tests", "Tests\Tests.csproj", "{F335971C-90FD-4B6A-A7CA-A5F17912C923}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Domain", "Domain\Domain.csproj", "{E247B757-11D7-43D8-AED8-40FA9F609E63}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Service", "Services\Service.csproj", "{CC61D213-4472-4B06-96AC-72FB68349FC2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BookStoreWeb", "BookStoreWeb\BookStoreWeb.csproj", "{547322A4-89BA-485F-B89D-910BB1768EA3}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +27,18 @@ Global
 		{F335971C-90FD-4B6A-A7CA-A5F17912C923}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F335971C-90FD-4B6A-A7CA-A5F17912C923}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F335971C-90FD-4B6A-A7CA-A5F17912C923}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E247B757-11D7-43D8-AED8-40FA9F609E63}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E247B757-11D7-43D8-AED8-40FA9F609E63}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E247B757-11D7-43D8-AED8-40FA9F609E63}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E247B757-11D7-43D8-AED8-40FA9F609E63}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CC61D213-4472-4B06-96AC-72FB68349FC2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CC61D213-4472-4B06-96AC-72FB68349FC2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CC61D213-4472-4B06-96AC-72FB68349FC2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CC61D213-4472-4B06-96AC-72FB68349FC2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{547322A4-89BA-485F-B89D-910BB1768EA3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{547322A4-89BA-485F-B89D-910BB1768EA3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{547322A4-89BA-485F-B89D-910BB1768EA3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{547322A4-89BA-485F-B89D-910BB1768EA3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

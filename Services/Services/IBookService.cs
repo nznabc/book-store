@@ -12,7 +12,7 @@ namespace Services
 
         bool DeleteBook(int id);
         
-        Task<bool> SaveBook(Book book);
+        void SaveBook(Book book);
         Task<bool> UpdateBook(Book book);
     }
 }

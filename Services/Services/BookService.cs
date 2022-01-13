@@ -30,11 +30,24 @@ namespace Services
             return data;
         }
 
-        public async Task<bool> SaveBook(Book book)
+        public void SaveBook(Book book)
         {
-            var res = await dataContext.AddAsync<Book>(book);
+            var result = dataContext.Books.FirstOrDefault(x => x.Id == book.Id);
+            if (result == null)
+            {
+                dataContext.Add<Book>(book);
+            }
+            else
+            {
+                result.Title = book.Title;
+                result.Summary= book.Summary;
+                result.Author = book.Author;
+                result.IssueDate = book.IssueDate;
+                result.Edition = book.Edition;
+                result.BookCategory = book.BookCategory;
+                dataContext.Update<Book>(result);                
+            }            
             dataContext.SaveChanges();
-            return res != null;
         }
 
         public bool DeleteBook(int id)

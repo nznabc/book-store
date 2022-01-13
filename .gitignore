@@ -55,3 +55,10 @@ dkms.conf
 /Tests/obj
 /WebApi/bin/Debug/net6.0
 /WebApi/obj
+/BookStoreWeb/bin/Debug/net6.0
+/BookStoreWeb/obj
+/BookStoreWeb/wwwroot/lib
+/Domain/obj
+/Services/bin/Debug/net6.0
+/Domain/bin/Debug/net6.0
+/Services/obj

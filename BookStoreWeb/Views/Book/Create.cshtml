@@ -1,0 +1,52 @@
+﻿@using Models
+
+@model Book
+
+<form method="post" asp-action="Save">
+    <fieldset>
+        <legend>Book Details</legend>
+        <div class="border p-3 mt-4">
+            <div class="row pb-2">
+                <h2 class="text-primary">Create Book</h2>
+                <hr />
+            </div>
+
+            <div class="form-group">
+                <label asp-for="Title" class="form-label mt-4"></label>
+                <input asp-for="Title" class="form-control" />
+                <span asp-validation-for="Title" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="Author" class="form-label mt-4"></label>
+                <input asp-for="Author" class="form-control" />
+                <span asp-validation-for="Author" class="text-danger"></span>
+            </div>            
+
+            <div class="form-group">
+                <label asp-for="BookCategory" class="form-label mt-4"></label>
+                <select class="form-select" asp-for="BookCategory" asp-items="Html.GetEnumSelectList<BookCategory>()"></select>            
+            </div>
+
+            <div class="form-group">
+                <label asp-for="Edition" class="form-label mt-4"></label>
+                <input asp-for="Edition" class="form-control" />
+                <span asp-validation-for="Edition" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="IssueDate" class="form-label mt-4"></label>
+                <input type="date" asp-for="IssueDate" class="form-control" />
+                <span asp-validation-for="IssueDate" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="Summary" class="form-label mt-4"></label>
+                <input asp-for="Summary" class="form-control" />
+            </div>
+
+            <button type="submit" class="btn btn-primary mt-1">Create</button>
+            <a asp-controller="Book" asp-action="Index" class="btn btn-secondary mt-1">Back to List</a>
+        </div>
+    </fieldset>
+</form>
